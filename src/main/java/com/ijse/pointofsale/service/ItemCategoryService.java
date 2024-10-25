@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Service;
 
+import com.ijse.pointofsale.dto.ItemCategoryDto;
 import com.ijse.pointofsale.entity.ItemCategory;
 
 
@@ -11,8 +12,8 @@ import com.ijse.pointofsale.entity.ItemCategory;
 
 public interface ItemCategoryService {
 
-     List<ItemCategory> getAllItemCategories();
-
+   List<ItemCategoryDto> getAllCategories();
+   
     ItemCategory getItemCategoryById(Long id);
 
     ItemCategory createItemCategory(ItemCategory itemCategory);
